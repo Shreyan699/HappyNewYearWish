@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #69247C;
+}
+/* Basic Element Styles */
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.timer{
+
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.timer span{
+    font-size: 3em;
+    color: white;
+    padding: 5px;
+    border: 3px solid rgba(255, 174, 52, 0.882);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 3px;
+    transition: all 0.3s ease;
+}
+
+.heading{
+    font-size: 2em;
+    font-family: 'Delius',sans-serif;
+    color: #FAC67A;
+    height: 10vh;
+    animation: heading 1.5s ease infinite;
+    text-shadow: 1px 1px 17px #fac67a;
+}
+
+.btn{
+    padding: 20px;
+    font-size: 20px;
+    border: 3px solid #fac67a;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+
+.btn:hover{
+    color: #69247C;
+    background-color: #F9E6CF;
+    border-radius: 40px;
+}
+
+.paragraph:active{
+    border-radius: 40px;
+}
+/* Animations */
+
+/*Heading - Anim */
+
+@keyframes heading{
+    0%{
+        font-size: 2.5em;
+    }
+    50%{
+        font-size: 2.45em;
+    }
+    100%{
+        font-size: 2.5em;
+    }
+}
+
+
+.box-2{
+    display: none;    
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.elements{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.paragraph{
+    width: 80%;
+    margin-top: 30px;
+    overflow-y: scroll;
+    height: 30vh;
+    transition: all 0.3s ease;
+    padding: 20px;
+    font-size: 2em ;
+    border: 3px solid #fec279;
+    border-radius: 20px;
+    background-color: #F9E6CF;
+    color: #69247C;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fac77a30;
+    border-radius: 20px;
+    height: 20%;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #F9E6CF;
+    border: 3px solid #69247C;
+    border-radius: 20px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fac67a;
+  }
